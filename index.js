@@ -12,3 +12,9 @@ console.log(person);
 let selectedColor = ['red','blue'];
 selectedColor[2] = 1;
 console.log(selectedColor.length);
+
+function greet(name, lastName) {
+    console.log('hello ' + name + ' ' + lastName);
+}
+
+greet('John', 'Smith');
