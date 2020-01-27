@@ -13,8 +13,25 @@ let selectedColor = ['red','blue'];
 selectedColor[2] = 1;
 console.log(selectedColor.length);
 
+
+//Performing a task
 function greet(name, lastName) {
     console.log('hello ' + name + ' ' + lastName);
 }
 
 greet('John', 'Smith');
+
+//Calculating a value
+function square(number) {
+    return number * number;
+}
+console.log(square(2));
+
+
+//If a consumer has more than 100 points,
+//They are golden consumer,
+//Otherwise they are silver consumer.
+
+let point = 100;
+let type = point > 100 ? 'gold' : 'silver';
+console.log(type);
