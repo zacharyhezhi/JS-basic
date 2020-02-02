@@ -35,3 +35,10 @@ console.log(square(2));
 let point = 100;
 let type = point > 100 ? 'gold' : 'silver';
 console.log(type);
+
+//logical operator
+
+let highIncome = true;
+let goodCreditScore = true;
+let eligibleForLoan = highIncome && goodCreditScore;
+console.log(eligibleForLoan);
