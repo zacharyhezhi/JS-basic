@@ -42,3 +42,11 @@ let highIncome = true;
 let goodCreditScore = true;
 let eligibleForLoan = highIncome && goodCreditScore;
 console.log(eligibleForLoan);
+
+//Logical Operators with Non-booleans,
+//Determin color by user's choice or default color.
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);
