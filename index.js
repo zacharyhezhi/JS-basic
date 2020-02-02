@@ -50,3 +50,12 @@ let defaultColor = 'blue';
 let currentColor = userColor || defaultColor;
 
 console.log(currentColor);
+
+//Swapping Variables
+let a = 'blue';
+let b = 'red';
+let c = a;
+a = b;
+b = c;
+console.log(a);
+console.log(b);
