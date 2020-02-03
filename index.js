@@ -105,10 +105,27 @@ for( let i = 0; i < 5; i++) {
 //     i++;
 // }
 
-// do while loop
+// do while loop will excute no mattter if the condition satisfies
 let i = 0;
 do {
     if (i %2 !== 0)
         console.log('do while loop' + i);
     i++;
 } while (i < 5)
+
+
+//for in loop
+const people = {
+    name: 'zachary',
+    age: 20
+};
+
+for (let key in people) {
+    console.log(key, people[key]);
+};
+
+const colors = ['red', 'green', 'purple'];
+
+for(let index in colors) {
+    console.log(index, colors[index]);
+}
