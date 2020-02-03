@@ -98,9 +98,17 @@ for( let i = 0; i < 5; i++) {
 }
 
 //while loop
+// let i = 0;
+// while (i < 5) {
+//     if (i %2 !== 0)
+//         console.log('while loop' + i);
+//     i++;
+// }
+
+// do while loop
 let i = 0;
-while (i < 5) {
+do {
     if (i %2 !== 0)
-        console.log('while loop' + i);
+        console.log('do while loop' + i);
     i++;
-}
+} while (i < 5)
