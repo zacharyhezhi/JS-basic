@@ -132,3 +132,10 @@ const colors = ['red', 'green', 'purple'];
 for(let color of colors) {
     console.log(color);
 }
+
+//Return the maximum number of two
+function max(i, j) {
+    return (i > j) ? i : j;
+};
+let maxNumber = max (3, 3);
+console.log(maxNumber);
