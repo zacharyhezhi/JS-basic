@@ -218,8 +218,21 @@ showNumbers(11);
 function showNumbers(limit) {
     let i = 0;
     while (i <= limit) { 
-    let evenOrOdd = (i % 2 == 0) ? 'even' : 'odd';
-    console.log(i + evenOrOdd);
-    i++;
+        let evenOrOdd = (i % 2 == 0) ? 'even' : 'odd';
+        console.log(i + evenOrOdd);
+        i++;
     }
 }
+
+//Count Truthy
+function countTruthy(array) {
+    let count = 0;
+    for (let i of array) {
+        if (i)
+            count++;
+    }
+    return count;
+}
+let count = countTruthy([0, null, '', false, 3, 4])
+console.log(count);
+
