@@ -212,3 +212,14 @@ function demeritPoints (speed) {
     }
 }
 
+//Even and Odd Numbers
+showNumbers(11);
+// console.log('result ' + result);
+function showNumbers(limit) {
+    let i = 0;
+    while (i <= limit) { 
+    let evenOrOdd = (i % 2 == 0) ? 'even' : 'odd';
+    console.log(i + evenOrOdd);
+    i++;
+    }
+}
