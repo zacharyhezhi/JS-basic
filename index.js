@@ -115,6 +115,7 @@ do {
 
 
 //for in loop
+//property of object
 const people = {
     name: 'zachary',
     age: 20
@@ -124,8 +125,10 @@ for (let key in people) {
     console.log(key, people[key]);
 };
 
+//for of loop
+//iterate array
 const colors = ['red', 'green', 'purple'];
 
-for(let index in colors) {
-    console.log(index, colors[index]);
+for(let color of colors) {
+    console.log(color);
 }
