@@ -139,3 +139,53 @@ function max(i, j) {
 };
 let maxNumber = max (3, 3);
 console.log(maxNumber);
+
+//Landscape
+function Landscape(width ,height) {
+    return (width > height);
+}
+let land = Landscape (12, 10);
+console.log(land);
+
+//FizzBuzz
+//Divisible by 3 -> Fizz,
+//Divisible by 5 -> Buzz,
+//Divisible by both 3 and 5 -> FizzBuzz,
+//Not divisible by both 3 or 5 -> input,
+//Not a number -> 'Not a number'.
+
+const output = fizzBuzz(3);
+console.log('output',output);
+// function fizzBuzz(i) {
+//     if (!Number.isInteger(i)) {
+//         return "Not a number";
+//     } 
+//     else if (i % 3 === 0) {
+//         if (i % 5 === 0) {
+//             return 'FizzBuzz';
+//         }
+//         else {
+//             return 'Fizz';
+//         }
+//     }
+//     else if  (i % 5 === 0) {
+//         return 'Buzz';
+//     }
+//     else return i;
+// }
+
+//reference answer 
+function fizzBuzz(input) {
+    if (typeof input !== "number") {
+        return NaN;
+    }
+    if ((input % 3 === 0) && (input % 5 === 0))
+        return 'FizzBuzz';
+    if (input % 3 === 0) 
+        return 'Fizz;';
+    if (input % 5 === 0)
+        return 'Buzz';
+    return input;
+}
+
+
