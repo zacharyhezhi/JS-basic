@@ -188,4 +188,27 @@ function fizzBuzz(input) {
     return input;
 }
 
+//Demerit Points
+//speed limit = 70
+//5 exceed -> 1 point 
+//Math.floor(1.3) = 1
+//12 points -> suspended
+
+let license = demeritPoints(70);
+console.log('Demerit Points ' + license);
+
+function demeritPoints (speed) {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+    if (speed < speedLimit + kmPerPoint) 
+        return 'OK';
+    else {
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        if (points >= 12) {
+            return 'suspended';
+        }
+        else 
+            return points + ' points';
+    }
+}
 
