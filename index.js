@@ -266,3 +266,25 @@ function sum(limit) {
     return sum;
 }
 console.log(sum(12));
+
+//Grade
+function calculateGrade(marks) {
+    let sum = 0;
+    for (let i of marks) {
+        sum += i;
+    }
+    let grade = sum / marks.length;
+    if (grade >= 1 && grade <= 59) 
+        return 'F';
+    if (grade >= 60 && grade <= 69) 
+        return 'D';
+    if (grade >= 70 && grade <= 79) 
+        return 'C';
+    if (grade >= 80 && grade <= 89) 
+        return 'B'; 
+    if (grade >= 90 && grade <= 100) 
+        return 'A';         
+}
+
+const marks = [80, 50, 0];
+console.log(calculateGrade(marks));
