@@ -1,2 +1,3 @@
 # JS-basic
-###Exercise for Javascript 
+### Exercise for Javascript 
+### Prepare for interviews 
