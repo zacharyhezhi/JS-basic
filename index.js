@@ -335,6 +335,7 @@ const circle = {
 circle.draw(); // method
 
 //factory function 
+//camel notation: oneTwoThree
 function createCircle(radius) {
     return {
         radius,// radius: radius,
@@ -349,3 +350,14 @@ console.log(circle1);
 circle1.draw();
 const circle2 = createCircle(2);
 console.log(circle2);
+
+//construct function 
+//pascal notation: OneTwoThree
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(1);
