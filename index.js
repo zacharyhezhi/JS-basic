@@ -288,3 +288,16 @@ function calculateGrade(marks) {
 
 const marks = [80, 50, 0];
 console.log(calculateGrade(marks));
+
+//Stars
+showStars(5);
+function showStars(rows) {
+    for (let i = 1;  i <= rows; i++) {
+        pattern = '';
+        for(let j = 0;  j < i; j++) {
+            pattern += '*';
+        }
+        console.log(pattern);
+    }
+}
+
