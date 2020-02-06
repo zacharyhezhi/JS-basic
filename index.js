@@ -360,4 +360,14 @@ function Circle(radius) {
     }
 }
 
-const circle = new Circle(1);
+const circle4 = new Circle(1);
+
+//Dynamic nature of objects
+const circleDynamic = {
+    radius: 1
+};
+circleDynamic .color = 'yellow';
+circleDynamic .draw = function() {};
+delete circleDynamic .color;
+delete circleDynamic .draw;
+console.log(circleDynamic );
