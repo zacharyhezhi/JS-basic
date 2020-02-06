@@ -301,3 +301,22 @@ function showStars(rows) {
     }
 }
 
+//Prime Numbers
+function showPrimes(limit) {
+    for (let i = 2; i <= limit; i++) {
+        if (isPrimes(i)) {
+            console.log(i);
+        }
+    }
+
+}
+function isPrimes(number) {
+    for (let i = 2; i <= number - 1; i++) {
+        if(number % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+showPrimes(37);
