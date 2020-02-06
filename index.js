@@ -308,7 +308,6 @@ function showPrimes(limit) {
             console.log(i);
         }
     }
-
 }
 function isPrimes(number) {
     for (let i = 2; i <= number - 1; i++) {
@@ -320,3 +319,17 @@ function isPrimes(number) {
 }
 
 showPrimes(37);
+
+//Object-oriented programming (OOP)
+const circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1
+    },
+    isVisible: true,
+    draw: function() {
+        console.log('draw');
+    }
+};
+circle.draw(); // method
