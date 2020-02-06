@@ -391,3 +391,51 @@ decrease(obj);
 console.log(obj);
 //value changed because object is copied by reference, the memory is the same
 //Once the value is changed, all referece pointed on this memory will change the value
+
+//Enumerating Properties of an Object
+const circle5 = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+};
+//main way to iterate object
+for (let key in circle5) {
+    console.log(key, circle5[key]);
+};
+//Object.keys() get the properties as an array
+for (let key of Object.keys(circle5)) {
+    console.log(key);
+};
+//Object.entries() get each value pair as an array
+for (let entry of Object.entries(circle5)) {
+    console.log(entry);
+};
+//Check if the property is in the object
+if ('radius' in circle5) console.log('yes');
+
+//Cloning an Object
+const circle6 ={
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+}
+
+//traditional way
+const another = {};
+for (let key in circle6) 
+    another[key] = circle6[key];
+
+//Object.assign()
+const another2 = Object.assign({
+    color: "yellow",
+}, circle6);
+
+//Spreading method
+const another3 = { ...circle6};
+
+
+console.log(another);
+console.log(another2);
+console.log(another3);
