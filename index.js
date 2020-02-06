@@ -371,3 +371,23 @@ circleDynamic .draw = function() {};
 delete circleDynamic .color;
 delete circleDynamic .draw;
 console.log(circleDynamic );
+
+//Value type vs Reference Type
+
+let number = 10;
+function increase (number) {
+    number++;
+}
+increase(number);
+console.log(number);
+//number does not change because increase(number)'s number is copied as value type, 
+//its value is copied, but the memory is different
+
+let obj = {value: 10};
+function decrease(obj) {
+    obj.value--;
+}
+decrease(obj);
+console.log(obj);
+//value changed because object is copied by reference, the memory is the same
+//Once the value is changed, all referece pointed on this memory will change the value
