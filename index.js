@@ -444,5 +444,25 @@ console.log(another3);
 //String primitive 
 const messesage = ' This is my first message ';
 //String object
-const another = new String('hi');  
-console.log(another.length);
+const another4 = new String('hi');  
+console.log(another4.length);
+
+//Template Literals ES6
+//${} place holder function value can be used in this
+const name = 'John';
+const another5 = 
+`Hi, ${name} ${3+2} 
+Regards
+Zac.
+`;
+console.log(another5);
+
+//Date
+const now = new Date();
+const date1 = new Date('May 11 2018 09:00');
+const date2 = new Date(2018, 4, 11, 9);
+now.setFullYear(2017);
+now.getDate();
+now.toDateString();
+now.toTimeString();
+now.toISOString();// The most common way to communicate with the backend.
