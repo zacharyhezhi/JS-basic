@@ -439,3 +439,10 @@ const another3 = { ...circle6};
 console.log(another);
 console.log(another2);
 console.log(another3);
+
+//String
+//String primitive 
+const messesage = ' This is my first message ';
+//String object
+const another = new String('hi');  
+console.log(another.length);
