@@ -466,3 +466,19 @@ now.getDate();
 now.toDateString();
 now.toTimeString();
 now.toISOString();// The most common way to communicate with the backend.
+
+
+//Address Object
+let Address1 = {
+    street: 'high street',
+    city: 'Sydney',
+    zipCode: '2055'
+};
+
+function showAddress(Address){
+    for (let key in Address){
+        console.log(`${key}:`, Address[key]);
+    };
+} 
+
+showAddress(Address1);
