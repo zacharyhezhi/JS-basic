@@ -535,3 +535,15 @@ let Post = {
     isLive: true
 }
 console.log(Post);
+
+//Constructor Functions for Post Object
+function CreatePost(title, body, author){
+    this.title = title,
+    this.body = body,
+    this.author = author,
+    this.views = 0,
+    this.comments = [],
+    this.isLive = false
+}
+let Post1 = new CreatePost(a, b, c);
+console.log(Post1);
