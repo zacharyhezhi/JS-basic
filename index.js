@@ -659,3 +659,14 @@ for(let number of numbers8){
 }
 
 numbers8.forEach((number,index) => console.log(index, number));
+
+// Joining Arrays
+const joined = numbers8.join(',');
+console.log(joined);
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+console.log(parts);
+//Used in URL
+const combined9 = parts.join('-');
+console.log(combined9);
