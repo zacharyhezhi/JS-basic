@@ -570,13 +570,34 @@ numbers.splice(2, 0 , "a", "b");
 console.log(numbers);
 
 //Finding Elements (Primitives)
-const numbers1 = [1, 2, 3, 4, 7];
-//search for 1 true return index, false return -1
-console.log(numbers1.indexof(1));
+const numbers1 = [1, 2, 3, 4, 7, 1];
+//search for 1 true return index, false return -1 ,syntax alert: indexOf
+console.log(numbers1.indexOf(1));
 //search from index 2 for number 1
-console.log(numbers.indexof(1,2));
-console.log(numbers.lastIndexOf(1));
+console.log(numbers1.indexOf(1,2));
+console.log(numbers1.lastIndexOf(1));
 //check if the number is in the array
-console.log(numbers.indexOf(1) !== -1);
+console.log(numbers1.indexOf(1) !== -1);
 //Consice syntax 
-console.log(numbers.includes(1));
+console.log(numbers1.includes(1));
+
+//Finding Elements (Reference Types)
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 1, name: 'a'},
+]
+
+//Reference type can not be checked by equal
+console.log(courses.includes({id: 1, name: 'a'}));
+
+//Find method
+const course = courses.find(function(course){
+    return course.name === 'a';
+});
+console.log(course);
+
+//Find method index
+const course1 = courses.findIndex(function(course){
+    return course.name === 'a';
+});
+console.log(course1);
