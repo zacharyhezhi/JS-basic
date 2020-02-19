@@ -503,3 +503,20 @@ function Address(street, city, zipCode){
 }
 let address3 = new Address('a','b','c');
 console.log(address3);
+
+//Object Equality
+//Check if two objects's properties are equal
+function areEqual(address1, address2){
+    return address1.street === address2.street &&
+            address1.city === address2.city &&
+            address3.zipCode === address3.zipCode;
+}
+//Check if two objects refer to the same object
+function areSame(address1, address2){
+    return address1 === address2;
+}
+let address4 = address3;
+
+console.log(areEqual(address2, address3));
+console.log(areSame(address2, address3));
+console.log(areSame(address3, address4));
