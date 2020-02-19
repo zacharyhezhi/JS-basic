@@ -651,3 +651,11 @@ const combined4 = [...first6];
 first6.pop();
 console.log(first6);
 console.log(combined4);
+
+//Iterating an Array
+const numbers8 = [1, 2, 3];
+for(let number of numbers8){
+    console.log(number);
+}
+
+numbers8.forEach((number,index) => console.log(index, number));
