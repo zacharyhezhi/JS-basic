@@ -643,3 +643,11 @@ const first7 = [{id: 1}];
 const combined2 = first7.concat(second6);
 first7[0].id = 10;
 console.log(combined2);
+
+//The Spread Operator
+const combined3 = [...first6, 'a', ...second6, 'b'];
+//copy array
+const combined4 = [...first6];
+first6.pop();
+console.log(first6);
+console.log(combined4);
