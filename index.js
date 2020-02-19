@@ -605,3 +605,13 @@ console.log(course1);
 //Arrow Functions
 const course3 = courses.find(course => course.name === 'a');
 console.log(course3);
+
+//Removing Elements
+const numbers5 = [1, 2, 3, 4, 5];
+//End
+const last = numbers5.pop();
+//Start
+const first = numbers5.shift();
+//Middle
+numbers5.splice(2, 1);
+
