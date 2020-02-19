@@ -547,3 +547,10 @@ function CreatePost(title, body, author){
 }
 let Post1 = new CreatePost(a, b, c);
 console.log(Post1);
+
+//Price Range Object
+let priceRange = [
+    { label: '$', tooltip: 'Inexpensive', minPerPerson: 0, MaxPerPerson: 10},
+    { label: '$$', tooltip: 'Moderate', minPerPerson: 11, MaxPerPerson: 20},
+    { label: '$$$', tooltip: 'Expensive', minPerPerson: 21, MaxPerPerson: 30},
+]
