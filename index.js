@@ -615,3 +615,17 @@ const first = numbers5.shift();
 //Middle
 numbers5.splice(2, 1);
 
+// Emptying an Array
+let numbers6 = [1, 2, 3, 4];
+let another6 = numbers6;
+
+//solution 1, if you have another reference to this array, then it will not empty the array
+numbers6 = []
+console.log(numbers6);
+console.log(another6);
+
+//solution 2 work perfectly
+numbers6.length = 0;
+
+//solution 3 work but redundancy
+numbers6.splice(0, numbers6.length); 
