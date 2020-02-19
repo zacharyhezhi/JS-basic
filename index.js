@@ -629,3 +629,17 @@ numbers6.length = 0;
 
 //solution 3 work but redundancy
 numbers6.splice(0, numbers6.length); 
+
+// Combining and Slicing Arrays
+const first6 = [1, 2, 3];
+const second6 = [4, 5, 6];
+const combined = first6.concat(second6);
+const slice = combined.slice(2, 4);
+console.log(combined);
+console.log(slice);
+
+//Reference type :copy the reference, not the value
+const first7 = [{id: 1}];
+const combined2 = first7.concat(second6);
+first7[0].id = 10;
+console.log(combined2);
