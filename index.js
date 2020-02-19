@@ -520,3 +520,18 @@ let address4 = address3;
 console.log(areEqual(address2, address3));
 console.log(areSame(address2, address3));
 console.log(areSame(address3, address4));
+
+//Blog Post Object
+
+let Post = {
+    title: 'Love',
+    body: 'Love Story',
+    author: 'Zachary',
+    views: 10,
+    comments: [
+        {author: 'Jeni',body: 'good'},
+        {author: 'Jery',body: 'good'},
+    ],
+    isLive: true
+}
+console.log(Post);
