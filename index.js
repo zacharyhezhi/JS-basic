@@ -554,3 +554,29 @@ let priceRange = [
     { label: '$$', tooltip: 'Moderate', minPerPerson: 11, MaxPerPerson: 20},
     { label: '$$$', tooltip: 'Expensive', minPerPerson: 21, MaxPerPerson: 30},
 ]
+
+//Arrays
+//Adding Elements
+const numbers = [3, 4];
+
+//End
+numbers.push(5, 6);
+
+//Beginning
+numbers.unshift(1, 2);
+
+//Middle
+numbers.splice(2, 0 , "a", "b");
+console.log(numbers);
+
+//Finding Elements (Primitives)
+const numbers1 = [1, 2, 3, 4, 7];
+//search for 1 true return index, false return -1
+console.log(numbers1.indexof(1));
+//search from index 2 for number 1
+console.log(numbers.indexof(1,2));
+console.log(numbers.lastIndexOf(1));
+//check if the number is in the array
+console.log(numbers.indexOf(1) !== -1);
+//Consice syntax 
+console.log(numbers.includes(1));
