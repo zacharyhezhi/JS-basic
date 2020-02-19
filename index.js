@@ -601,3 +601,7 @@ const course1 = courses.findIndex(function(course){
     return course.name === 'a';
 });
 console.log(course1);
+
+//Arrow Functions
+const course3 = courses.find(course => course.name === 'a');
+console.log(course3);
