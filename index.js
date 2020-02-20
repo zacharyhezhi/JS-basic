@@ -670,3 +670,27 @@ console.log(parts);
 //Used in URL
 const combined9 = parts.join('-');
 console.log(combined9);
+
+
+//Sorting Arrays
+const numbers9 = [2, 3, 1];
+numbers9.sort();
+console.log(numbers9);
+numbers9.reverse();
+console.log(numbers9);
+
+//Sorting object
+const course2 = [
+    {id: 1, name: 'Node.js'},
+    {id: 2, name: 'javaScript'}
+];
+//ACSII code
+course2.sort(function(a, b){
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+});
+console.log(course2);
