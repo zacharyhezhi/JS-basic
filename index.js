@@ -707,3 +707,8 @@ const atLeastOnePositive = numbers.some(function(value){
     return value >= 0;
 });
 console.log(atLeastOnePositive);
+
+//Filtering an Array
+const numbers10 = [1, -1, 2, 3];
+const filtered = numbers10.filter(n => n >= 0);
+console.log(filtered);
