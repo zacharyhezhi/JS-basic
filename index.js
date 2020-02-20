@@ -744,3 +744,15 @@ function arrayRangeFrom(min, max){
     }
     return array;
 }
+
+//Exercise 2- Includes
+const include = includeNumber(numbers11, 7);
+console.log(include);
+
+function includeNumber(array, searchElement) {
+    for(let i of array) {
+        if( i === searchElement)
+            return true;
+    }
+    return false;
+}
