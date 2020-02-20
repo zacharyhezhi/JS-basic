@@ -726,3 +726,9 @@ const items2 = numbers10
     .map(obj => obj.value);
 
 console.log(items2);
+
+//Reducing an Array
+const sum2 = numbers10.reduce(
+    (accumulator , currentValue) => accumulator + currentValue
+    );
+console.log(sum2);
