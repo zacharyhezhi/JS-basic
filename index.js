@@ -732,3 +732,15 @@ const sum2 = numbers10.reduce(
     (accumulator , currentValue) => accumulator + currentValue
     );
 console.log(sum2);
+
+//Exercise 1- Array from Range
+const numbers11 = arrayRangeFrom(0, 4);
+console.log(numbers11);
+
+function arrayRangeFrom(min, max){
+    let array = [];
+    for(let i = min; i <= max; i++){
+        array.push(i);
+    }
+    return array;
+}
