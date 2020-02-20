@@ -126,7 +126,7 @@ for (let key in people) {
 };
 
 //for of loop
-//iterate array
+//iterate exceptArray
 const colors = ['red', 'green', 'purple'];
 
 for(let color of colors) {
@@ -755,4 +755,18 @@ function includeNumber(array, searchElement) {
             return true;
     }
     return false;
+}
+
+//Exercise 3- Except
+const numbers12 = [1, 2, 3, 4, 1, 1];
+const except = exceptNumber(numbers12, 1);
+console.log(except);
+
+function exceptNumber(array, exclude){
+    exceptArray = [];
+    for(let i of array){
+        if (i !== exclude)
+            exceptArray.push(i);
+    }
+    return exceptArray;
 }
