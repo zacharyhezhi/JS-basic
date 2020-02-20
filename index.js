@@ -712,3 +712,17 @@ console.log(atLeastOnePositive);
 const numbers10 = [1, -1, 2, 3];
 const filtered = numbers10.filter(n => n >= 0);
 console.log(filtered);
+
+// Mapping an Array
+const items =  filtered.map(n => '<li>' + n + '</li>');
+const html ='<ul>' + items.join('') + '</ul>';
+console.log(html);
+
+//Mapping an object, chaining the maps
+const items2 = numbers10
+    .filter(n => n >= 0)
+    .map(n => ({ value: n })) // ES6 retrun object, add()
+    .filter(obj => obj.value > 1)
+    .map(obj => obj.value);
+
+console.log(items2);
