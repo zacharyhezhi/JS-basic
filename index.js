@@ -694,3 +694,16 @@ course2.sort(function(a, b){
     return 0;
 });
 console.log(course2);
+
+//Testing the Elements of an Array
+const numbers7 = [1, -1, 2, 3];
+//every() : check all elements until it's false, it break
+const allPositive = numbers.every(function(value){
+    return value >= 0;
+});
+console.log(allPositive);
+//some() : check if at least one element satisfy the requirement, then it break
+const atLeastOnePositive = numbers.some(function(value){
+    return value >= 0;
+});
+console.log(atLeastOnePositive);
