@@ -801,3 +801,16 @@ function countOccurrences(array, number){
     }
     return sum;
 }
+
+//reduce method
+function countReduce(array, number){
+   return array.reduce((accumulator, current) => {
+        const occurrence = (current === number)? 1 : 0;
+        return accumulator + occurrence;
+    }, 0);
+}
+
+const count4 = countReduce(numbers13, 1);
+console.log(count4);
+
+//Exercise 6- Get Max
