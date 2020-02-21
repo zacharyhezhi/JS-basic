@@ -814,3 +814,10 @@ const count4 = countReduce(numbers13, 1);
 console.log(count4);
 
 //Exercise 6- Get Max
+function getMax(array){
+    return array.reduce((a, b) => {return (a>b)? a : b});
+}
+
+numbers14 = [1, 2, 3, 4]
+const max1 = getMax(numbers14);
+console.log(max1);
