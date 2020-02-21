@@ -772,7 +772,7 @@ function exceptNumber(array, exclude){
 }
 
 //Exercise 4- Moving an Element
-const numbers13 = [1, 2, 3, 4];
+const numbers13 = [1, 2, 3, 4, 1, 1];
 const outputMove = move(numbers13, 1, 2);
 console.log(outputMove);
 
@@ -787,4 +787,17 @@ function move(array, index, offset){
         return output;
     }   
     else console.error('Invalid Offset.');
+}
+
+//Exercise 5- Count Occurrences
+const count3 = countOccurrences(numbers13, 1);
+console.log(count3);
+
+function countOccurrences(array, number){
+    let sum = 0;
+    for(let i of array){
+        if (i === number)
+            sum++;
+    }
+    return sum;
 }
