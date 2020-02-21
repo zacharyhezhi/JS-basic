@@ -770,3 +770,21 @@ function exceptNumber(array, exclude){
     }
     return exceptArray;
 }
+
+//Exercise 4- Moving an Element
+const numbers13 = [1, 2, 3, 4];
+const outputMove = move(numbers13, 1, 2);
+console.log(outputMove);
+
+function move(array, index, offset){
+    let output = [...array];
+    let number = output[index];
+
+    output.splice(index, 1);
+    let moveIndex = index + offset;
+    if (moveIndex <= output.length && moveIndex >= 0){
+        output.splice(moveIndex, 0, number);
+        return output;
+    }   
+    else console.error('Invalid Offset.');
+}
