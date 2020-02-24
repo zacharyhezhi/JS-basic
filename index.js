@@ -889,10 +889,21 @@ const people1 = {
         return `${firstName} ${this.lastName}`;
     },
     set fullName(value) {
+        if (typeof value !== 'string')
+            throw new Error('Value is not a string');
         const parts = value.split(' ');
+        if(parts.length !== 2)
+         throw new Error('Enter a first name and last name')
         this.firstName = parts[0];
         this.lastName = parts[1];
     }
 };
-people1.fullName = 'John Smith';
-console.log(people1);
+try {
+    people1.fullName = 'John Smith';
+}
+catch(e) {
+    alert(e);
+}
+console.log(people1.fullName);
+
+//Try and Catch
