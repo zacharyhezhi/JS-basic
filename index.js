@@ -898,6 +898,7 @@ const people1 = {
         this.lastName = parts[1];
     }
 };
+//Try and Catch
 try {
     people1.fullName = 'John Smith';
 }
@@ -906,4 +907,14 @@ catch(e) {
 }
 console.log(people1.fullName);
 
-//Try and Catch
+//The this Keyword
+const video1 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags(){
+        this.tags.forEach(function(tag) {//this means the seond this argument below inside of forEach
+            console.log(this.title, tag);
+        }, this);//this means the objects video1
+    }
+};
+video1.showTags();
