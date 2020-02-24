@@ -874,3 +874,9 @@ function sum4(...args){//args now transfer to an array, so it can use reduce, an
 }
 total1 = sum4(1,2,3)
 console.log(total1);
+
+//Default Parameters
+function interest( principle, rate, years = 5){// put the default parameters at the last of the parameters
+    return principle * rate * years;
+}
+console.log(interest( 100000, 3.5));
