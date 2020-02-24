@@ -859,3 +859,11 @@ run();
 move1();
 
 //Arguments
+function sum3(){
+    let total = 0;
+    for( let value of arguments)//arguments are an object with iterator(index from 0), so it can iterated
+        total += value;
+    return total;
+}
+let total = sum3(1,2,3,4,5)
+console.log(total);
