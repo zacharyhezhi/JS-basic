@@ -838,5 +838,24 @@ const titles = movies
     .filter(m => m.year === '2018' && m.rating > 4)
     .sort((a, b) => a.rating - b.rating)
     .reverse()
-    .map(m => m.title)
+    .map(m => m.title);
 console.log(titles);
+
+//Function Declarations vs Expressions
+//Function declaration
+
+walk()// You can call the function using function declaration because of hoisting
+function walk(){
+    console.log('walk');
+}
+
+//Function expressions
+//run() you can not call the function when it is using let const
+const run = function(){
+    console.log('run');
+}
+let move1 = run;
+run();
+move1();
+
+//Arguments
