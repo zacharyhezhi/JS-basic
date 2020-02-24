@@ -880,3 +880,19 @@ function interest( principle, rate, years = 5){// put the default parameters at 
     return principle * rate * years;
 }
 console.log(interest( 100000, 3.5));
+
+//Getters and Setters
+const people1 = {
+    firstName: 'Zachary',
+    lastName: 'He',
+    get fullName() {
+        return `${firstName} ${this.lastName}`;
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+people1.fullName = 'John Smith';
+console.log(people1);
