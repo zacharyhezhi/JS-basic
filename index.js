@@ -821,3 +821,22 @@ function getMax(array){
 numbers14 = [1, 2, 3, 4]
 const max1 = getMax(numbers14);
 console.log(max1);
+
+//Exercise 7- Movies
+const movies = [
+    { title: 'a', year: '2018', rating: 4.5},
+    { title: 'b', year: '2018', rating: 4.7},
+    { title: 'c', year: '2018', rating: 3},
+    { title: 'd', year: '2017', rating: 4.5}
+];
+// All the movie in 2018 rating > 4
+// Sorting by rating
+// Descending order
+// Pick their title
+
+const titles = movies
+    .filter(m => m.year === '2018' && m.rating > 4)
+    .sort((a, b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
+console.log(titles);
