@@ -867,3 +867,10 @@ function sum3(){
 }
 let total = sum3(1,2,3,4,5)
 console.log(total);
+
+//The Rest Operator
+function sum4(...args){//args now transfer to an array, so it can use reduce, and it must the last parameter
+    return args.reduce((a,b) => a + b);
+}
+total1 = sum4(1,2,3)
+console.log(total1);
