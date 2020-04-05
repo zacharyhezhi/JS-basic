@@ -912,9 +912,20 @@ const video1 = {
     title: 'a',
     tags: ['a', 'b', 'c'],
     showTags(){
-        this.tags.forEach(function(tag) {//this means the seond this argument below inside of forEach
-            console.log(this.title, tag);
-        }, this);//this means the objects video1
+        this.tags.forEach(tag => {
+            console.log(this.title, tag);// this in arraw function refer to the object, not global any more!
+        });
     }
 };
 video1.showTags();
+
+//Changing this
+function playVideo(a, b) {
+    console.log(this);
+}
+
+playVideo.call({ name: 'Mosh'}, 1, 2);
+playVideo.apply({ name: 'Mosh'}, [1, 2]);
+const fn = playVideo.bind({ name: 'Mosh'});// Three ways to bind this in old JS
+fn();
+
